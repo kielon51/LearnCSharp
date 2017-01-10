@@ -32,5 +32,40 @@ namespace datatypes
         }
 
 
+        public static string JoinStrings(String text, String text2)
+        {
+            var resultstring = text + ' ' + text2;
+            Console.WriteLine(resultstring);
+            return resultstring;
+        }
+        public static int Arithmetic(int num1, int num2, char oper)
+        {
+            var result = 0;
+
+            if (oper == '+')
+            {
+                result = num1 + num2;
+
+
+            }
+            if (oper == '-')
+            {
+                result = num1 - num2;
+
+
+            }
+            if (oper == '*')
+            {
+                result = num1 * num2;
+
+
+            }
+            if (oper == '/')
+            {
+                result = num1 / num2;
+            }
+            Console.WriteLine(result);
+            return result;
+        }
     }
 }
